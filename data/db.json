@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": "8be0",
+      "title": "Java",
+      "author": "Charles",
+      "body": "Welcome to java"
+    },
+    {
+      "id": "38a9",
+      "title": "",
+      "author": "",
+      "body": ""
+    },
+    {
+      "id": "a7cd",
+      "title": "",
+      "author": "",
+      "body": ""
+    },
+    {
+      "id": "4dce",
+      "title": "",
+      "author": "",
+      "body": ""
+    }
+  ]
+}

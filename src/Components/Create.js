@@ -27,7 +27,7 @@ const Create = () => {
       })
       .catch(err => {
         toast.error('An error occurred while adding the blog', {
-          position: "top-right",
+          position: toast.POSITION.TOP_RIGHT,
           autoClose: 3000,
         });
       });

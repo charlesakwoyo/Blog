@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/navbar'
 import Home from './Components/Home';
@@ -6,7 +6,7 @@ import Create from './Components/Create';
 import NotFound from './Components/NotFound';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import BlogDetails from './Components/BlogDetails';
 
 function App() {
   return (
@@ -23,9 +23,9 @@ function App() {
             <Create/>
             </Route>
 
-            {/* <Route path="/Blog-details/:id">
+            {<Route path="/Blog-details/:id">
             <BlogDetails/>
-            </Route> */}
+            </Route> }
 
             <Route path="*">
               <NotFound/>

@@ -1,94 +1,16 @@
 {
   "blogs": [
     {
-      "id": "8be0",
+      "id": "2418",
       "title": "Java",
       "author": "Charles",
-      "body": "Welcome to java"
+      "body": "This is a sample of java"
     },
     {
-      "id": "38a9",
-      "title": "",
-      "author": "",
-      "body": ""
-    },
-    {
-      "id": "a7cd",
-      "title": "",
-      "author": "",
-      "body": ""
-    },
-    {
-      "id": "4dce",
-      "title": "",
-      "author": "",
-      "body": ""
-    },
-    {
-      "id": "e2ce",
-      "title": "",
-      "author": "",
-      "body": ""
-    },
-    {
-      "id": "bbdb",
-      "title": "2w3ertyui",
-      "author": "wertgyujhk",
-      "body": "teryui"
-    },
-    {
-      "id": "074a",
-      "title": "",
-      "author": "",
-      "body": ""
-    },
-    {
-      "id": "6d08",
-      "title": "",
-      "author": "",
-      "body": ""
-    },
-    {
-      "id": "dd77",
-      "title": "WERTYUIO",
-      "author": "WERTYUIO",
-      "body": "ERGHJ"
-    },
-    {
-      "id": "31c3",
-      "title": "SDFGH",
-      "author": "SDFGHJ",
-      "body": "SDFGH"
-    },
-    {
-      "id": "a038",
-      "title": "",
-      "author": "",
-      "body": ""
-    },
-    {
-      "id": "db90",
-      "title": "",
-      "author": "",
-      "body": ""
-    },
-    {
-      "id": "8a23",
-      "title": "",
-      "author": "",
-      "body": ""
-    },
-    {
-      "id": "bb53",
-      "title": "",
-      "author": "",
-      "body": ""
-    },
-    {
-      "id": "8e05",
-      "title": "",
-      "author": "",
-      "body": ""
+      "id": "676f",
+      "title": "asg",
+      "author": "sdfghj",
+      "body": "sdfgh"
     }
   ]
 }

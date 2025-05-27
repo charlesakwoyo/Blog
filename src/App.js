@@ -23,7 +23,7 @@ function App() {
             <Create/>
             </Route>
 
-            {<Route path="/Blog-details/:id">
+            {<Route path="/Blogdetails/:id">
             <BlogDetails/>
             </Route> }
 

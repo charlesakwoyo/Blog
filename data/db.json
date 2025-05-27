@@ -1,16 +1,10 @@
 {
   "blogs": [
     {
-      "id": "2418",
+      "id": "d20a",
       "title": "Java",
       "author": "Charles",
-      "body": "This is a sample of java"
-    },
-    {
-      "id": "676f",
-      "title": "asg",
-      "author": "sdfghj",
-      "body": "sdfgh"
+      "body": "This is a simple programing language"
     }
   ]
 }

@@ -1,39 +1,43 @@
-import {useParams} from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom';
 import useFetch from './useFetch';
-import {Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
 
-
-
-const Blogdetails =() =>{
+const Blogdetails = () => {
   const history = useHistory();
+  const { id } = useParams();
+  const { data: blog } = useFetch('http://localhost:4000/blogs/' + id);
 
-  const {id} = useParams()
-  const {data:blog}= useFetch ('http://localhost:4000/blogs/' +id);
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-const handleSubmit= (e) =>{
-  e.preventDefault()
+    const confirmDelete = window.confirm("Are you sure you want to delete this blog?");
+    if (confirmDelete) {
+      axios.delete('http://localhost:4000/blogs/' + id)
+        .then(() => {
+          alert("Blog deleted");
+          history.push("/");
+        })
+        .catch(err => console.log(err.message));
+    } else {
+      return;
+    }
+  };
 
-  axios.delete ('http://localhost:4000/blogs/' +id)
-    .then(res=>{
-      alert("blog deleted");
-      history.push("/")
-    })
-    .catch(err=>console.log(err.massege))
+  return (
+    <div className='details'>
+      {blog && (
+        <article>
+          <h3>{blog.title}</h3>
+          <p>Done by: {blog.author}</p>
+          <div>{blog.body}</div>
+          <Button onClick={handleSubmit} className="mt-3" variant="danger" type="submit">
+            Delete
+          </Button>
+        </article>
+      )}
+    </div>
+  );
+};
 
-}
-    return (
-       <div className='details'>
-        {blog && (
-          <article>
-            <h3>{blog.title}</h3>
-            <p>Done by:{blog.author}</p>
-            <div>{blog.body}</div>
-            <Button onClick = {handleSubmit} className="mt-3" variant ="danger" type="submit">Delete</Button>
-          </article>
-        )}
-       </div>
-    );
-}
 export default Blogdetails;
